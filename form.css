@@ -1,0 +1,150 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("images/formbg.jpg") no-repeat center center/cover;
+  padding-top: 100px;
+}
+.back-to-home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  text-decoration: none;
+  background: #000;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 2px solid #fff;
+}
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  word-spacing: 20px;
+  letter-spacing: 5px;
+}
+/* Form */
+form {
+  width: 1000px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 20px;
+}
+label {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+input,
+select {
+  width: 100%;
+}
+form h2 {
+  margin-bottom: 10px;
+}
+form .customer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+form .customer-details input {
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+form .travel-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+form .travel-details input {
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+form .destination-details {
+  margin-bottom: 20px;
+}
+form .destination-details select {
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.btn-group{
+    display: flex;
+    gap: 10px;
+}
+.book-now-btn {
+  background: #347928;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+.book-now-btn:hover {
+  background: #00712d;
+}
+.reset-form-btn {
+  background: #e83f25;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+.reset-form-btn:hover {
+  background: #a62c2c;
+}
+/* Media Queries */
+/* Mobile (phones) */
+@media (max-width: 599px) {
+  body{
+    padding: 75px 25px;
+    height: 100%;
+    width: 100%;
+  }
+  h1{
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  form{
+    width: 100%;
+  }
+  .travel-details{
+    display: block;
+  }
+}
+@media (max-width: 1023px) {
+  body{
+    height: 100%;
+    width: 100%;
+    padding: 75px 25px;
+  }
+  form{
+    width: 100%;
+  }
+}

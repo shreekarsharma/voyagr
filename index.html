@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voyagr</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav role="navigation" aria-label="Main navigation">
+        <div class="logo">
+          <a href="#hero">Voyagr</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#popular-destinations">Popular Destinations</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Hero Section -->
+      <div class="hero" id="hero" role="region" aria-label="Hero section">
+        <h1>From Bucket List to Boarding Pass</h1>
+        <p>Turning wanderlust into real-world adventures.</p>
+        <a href="#popular-destinations" class="btn">Explore Now</a>
+      </div>
+    </header>
+    <!-- Main Area -->
+    <main>
+      <section class="popular-destinations" id="popular-destinations" aria-labelledby="popular-destinations-heading">
+        <h2>Popular Destinations</h2>
+        <div class="destination-grid">
+          <div class="destination-card">
+            <img src="images/sicily.jpg" alt="Coastal view of Sicily" />
+            <div class="content">
+              <h3>Sicily</h3>
+              <p>
+                Sun-soaked shores, ancient ruins, and flavors as bold as the
+                island itself.
+              </p>
+              <form action="form.html">
+                <button type="submit" class="book-now-btn" aria-label="Book a trip to Sicily">Book Now</button>
+              </form>
+            </div>
+          </div>
+          <div class="destination-card">
+            <img src="images/crete.jpg" alt="Sea landscape in Crete" />
+            <div class="content">
+              <h3>Crete</h3>
+              <p>
+                Greece’s largest island blends myth, mountains, and
+                Mediterranean magic.
+              </p>
+              <form action="form.html">
+                <button type="submit" class="book-now-btn" aria-label="Book a trip to Crete">Book Now</button>
+              </form>
+            </div>
+          </div>
+          <div class="destination-card">
+            <img src="images/edinburgh.jpg" alt="Historic buildings in Edinburgh" />
+            <div class="content">
+              <h3>Edinburgh</h3>
+              <p>
+                A city of castles, cobblestones, and culture wrapped in misty
+                charm.
+              </p>
+              <form action="form.html">
+                <button type="submit" class="book-now-btn" aria-label="Book a trip to Edinburgh">Book Now</button>
+              </form>
+            </div>
+          </div>
+          <div class="destination-card">
+            <img src="images/lisbon.jpg" alt="Cityscape view of Lisbon" />
+            <div class="content">
+              <h3>Lisbon</h3>
+              <p>
+                Hills, trams, and timeless vibes in Portugal’s vibrant coastal
+                capital.
+              </p>
+              <form action="form.html">
+                <button type="submit" class="book-now-btn" aria-label="Book a trip to Lisbon">Book Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

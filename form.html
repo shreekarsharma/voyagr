@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <a href="index.html" class="back-to-home">Back To Home</a>
+    <h1>Book Your Next Adventure</h1>
+    <form action="" aria-labelledby="booking-heading">
+      <h2>Customer Information</h2>
+      <div class="customer-details">
+        <div class="name">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+        <div class="email">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="username@example.com"
+            required
+          />
+        </div>
+        <div class="phone">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="123-456-7890"
+            required
+          />
+        </div>
+      </div>
+      <h2>Travel Details</h2>
+      <div class="travel-details">
+        <div class="departure-date">
+          <label for="departure-date">Departure Date</label>
+          <input
+            type="date"
+            name="departure-date"
+            id="departure-date"
+            required
+          />
+        </div>
+        <div class="return-date">
+          <label for="return-date">Return Date</label>
+          <input type="date" name="return-date" id="return-date" required />
+        </div>
+        <div class="departure-time">
+          <label for="departure-time">Preferred Departure Time</label>
+          <input
+            type="time"
+            name="departure-time"
+            id="departure-time"
+            required
+          />
+        </div>
+        <div class="return-time">
+          <label for="return-time">Preferred Return Time</label>
+          <input type="time" name="return-time" id="return-time" required />
+        </div>
+      </div>
+      <h2>Destination Details</h2>
+      <div class="destination-details">
+        <label for="destination-place">Destination Place</label>
+        <select name="destination-place" id="destination-place">
+          <option value="" disabled selected>Select One</option>
+          <option value="sicily">Sicily</option>
+          <option value="crete">Crete</option>
+          <option value="lisbon">Lisbon</option>
+          <option value="edinburgh">Edinburgh</option>
+        </select>
+      </div>
+      <div class="btn-group">
+        <button class="book-now-btn" type="submit">Book Now</button>
+        <button class="reset-form-btn" type="reset">Reset Form</button>
+      </div>
+    </form>
+  </body>
+</html>

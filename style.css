@@ -1,0 +1,206 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul {
+  list-style: none;
+}
+/* Header */
+header {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("images/background.jpg") center center/cover;
+  height: 100vh;
+}
+header nav .logo a,
+header nav .nav-links li a,
+header .hero,
+header .hero a {
+  color: #fff;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+}
+header nav .logo a {
+  font-size: 30px;
+  font-weight: bold;
+}
+header nav .nav-links {
+  display: flex;
+  gap: 20px;
+}
+header nav .nav-links li {
+  padding: 10px 20px;
+}
+header nav .nav-links li:hover {
+  background: rgba(219, 219, 219, 0.1);
+  border-radius: 10px;
+}
+header nav .nav-links li a {
+  font-size: 25px;
+}
+/* Hero Section */
+header .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 80vh;
+}
+header .hero h1 {
+  font-size: 70px;
+}
+header .hero p {
+  font-size: 40px;
+}
+header .hero a {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: 2px solid #fff;
+  position: relative;
+  z-index: 1;
+}
+header .hero a:hover {
+  color: #000;
+}
+header .hero a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: -1;
+  transition: top 0.15s ease-in;
+}
+header .hero a:hover::before {
+  top: 0;
+}
+/* Main */
+main {
+  width: 100%;
+}
+main .popular-destinations {
+  padding: 50px;
+}
+main .popular-destinations h2 {
+  margin-bottom: 50px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+}
+main .popular-destinations .destination-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+main .popular-destinations .destination-grid .destination-card {
+  width: 400px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+main .popular-destinations .destination-grid .destination-card img {
+  width: 100%;
+}
+main .popular-destinations .destination-grid .destination-card .content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .popular-destinations .destination-grid .destination-card .content h3 {
+  font-size: 22px;
+}
+main .popular-destinations .destination-grid .destination-card .content p {
+  font-size: 20px;
+}
+main
+  .popular-destinations
+  .destination-grid
+  .destination-card
+  .content
+  .book-now-btn {
+  font-size: 18px;
+  background: #5cb338;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+main
+  .popular-destinations
+  .destination-grid
+  .destination-card
+  .content
+  .book-now-btn:hover {
+  background: #3e7b27;
+}
+/* Media Queries */
+/* Mobile (phones) */
+@media (max-width: 599px) {
+  header nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  header nav .nav-links li a {
+    font-size: 20px;
+  }
+  header .hero h1 {
+    font-size: 36px;
+  }
+  header .hero p {
+    font-size: 26px;
+  }
+  header .hero a {
+    font-size: 20px;
+  }
+  main .popular-destinations .destination-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+}
+
+/* Tablet (small to medium screens) */
+@media (max-width: 1023px) {
+  header nav .nav-links {
+    gap: 0px;
+  }
+  header .hero h1 {
+    font-size: 60px;
+  }
+  header .hero a {
+    font-size: 25px;
+  }
+  main .popular-destinations .destination-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .popular-destinations .destination-grid .destination-card {
+    justify-self: center;
+    align-self: center;
+  }
+}
