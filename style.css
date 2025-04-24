@@ -54,7 +54,7 @@ header nav .nav-links li:hover {
   border-radius: 10px;
 }
 header nav .nav-links li a {
-  font-size: 25px;
+  font-size: 20px;
 }
 /* Hero Section */
 header .hero {
@@ -66,13 +66,13 @@ header .hero {
   height: 80vh;
 }
 header .hero h1 {
-  font-size: 70px;
+  font-size: 55px;
 }
 header .hero p {
-  font-size: 40px;
+  font-size: 35px;
 }
 header .hero a {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   padding: 15px 30px;
   border: 2px solid #fff;
@@ -117,7 +117,8 @@ main .popular-destinations .destination-grid {
   gap: 20px;
 }
 main .popular-destinations .destination-grid .destination-card {
-  width: 400px;
+  justify-self: center;
+  width: 100%;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 main .popular-destinations .destination-grid .destination-card img {
@@ -158,49 +159,125 @@ main
   background: #3e7b27;
 }
 /* Media Queries */
-/* Mobile (phones) */
-@media (max-width: 599px) {
+/*
+@media (min-width: 320px) and (max-width:480px) {}
+@media (min-width: 481px) and (max-width:768px) {}
+@media (min-width: 769px) and (max-width:1024px) {}
+@media (min-width: 1025px) and (max-width:1200px) {}
+@media (min-width: 1201px){}
+*/
+@media (min-width: 320px) and (max-width: 480px) {
   header nav {
     flex-direction: column;
     gap: 20px;
   }
-  header nav .nav-links li a {
-    font-size: 20px;
+  header nav .logo a {
+    font-size: 25px;
   }
-  header .hero h1 {
-    font-size: 36px;
+  header nav .nav-links {
+    gap: 5px;
   }
-  header .hero p {
-    font-size: 26px;
-  }
-  header .hero a {
-    font-size: 20px;
-  }
-  main .popular-destinations .destination-grid {
+  header nav .nav-links li {
+    padding: 5px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
   }
-}
-
-/* Tablet (small to medium screens) */
-@media (max-width: 1023px) {
-  header nav .nav-links {
-    gap: 0px;
+  header nav .nav-links li a {
+    font-size: 14px;
+  }
+  header .hero {
+    padding: 0 20px;
+    text-align: center;
   }
   header .hero h1 {
-    font-size: 60px;
+    font-size: 30px;
+  }
+  header .hero p {
+    font-size: 21px;
   }
   header .hero a {
+    font-size: 18px;
+    padding: 7px 15px;
+  }
+  main .popular-destinations {
+    padding: 50px 25px;
+  }
+  main .popular-destinations .destination-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main .popular-destinations h2 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 10px;
+  }
+  header nav .logo a {
     font-size: 25px;
+  }
+  header nav .nav-links {
+    gap: 20px;
+  }
+  header nav .nav-links li {
+    padding: 5px 10px;
+  }
+  header nav .nav-links li a {
+    font-size: 14px;
+  }
+  header .hero {
+    padding: 0 20px;
+    text-align: center;
+  }
+  header .hero h1 {
+    font-size: 30px;
+  }
+  header .hero p {
+    font-size: 21px;
+  }
+  header .hero a {
+    font-size: 18px;
+    padding: 7px 15px;
+  }
+  main .popular-destinations {
+    padding: 50px 20px;
   }
   main .popular-destinations .destination-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  main .popular-destinations .destination-grid .destination-card {
-    justify-self: center;
-    align-self: center;
+  main .popular-destinations h2 {
+    font-size: 30px;
+  }
+  main .popular-destinations .destination-grid .destination-card .content p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  header nav .nav-links {
+    gap: 10px;
+  }
+  header nav .nav-links li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+  }
+  header nav .nav-links li a {
+    font-size: 18px;
+  }
+  header .hero h1 {
+    font-size: 45px;
+  }
+  header .hero p {
+    font-size: 30px;
+  }
+  main .popular-destinations .destination-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .popular-destinations .destination-grid{
+    gap: 40px;
   }
 }
