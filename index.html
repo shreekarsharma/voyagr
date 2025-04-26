@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voyagr</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -30,6 +31,7 @@
     </header>
     <!-- Main Area -->
     <main>
+      <!-- Popular Destinations -->
       <section class="popular-destinations" id="popular-destinations" aria-labelledby="popular-destinations-heading">
         <h2>Popular Destinations</h2>
         <div class="destination-grid">
@@ -87,7 +89,51 @@
           </div>
         </div>
       </section>
+      <!-- Testimonials -->
+       <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+        <h2>Testimonials</h2>
+        <div class="testimonials-grid">
+          <!-- User 1 Testimonial -->
+          <div class="testimonial-card">
+            <img src="images/user1.jpg" alt="">
+            <div class="content">
+              <h3>Ruby Wade</h3>
+              <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+              <p>Voyagr made planning my trip effortless. I was sipping wine in Lisbon before I knew it!</p>
+            </div>
+          </div>
+          <!-- User 2 Testimonial -->
+          <div class="testimonial-card">
+            <img src="images/user2.jpg" alt="">
+            <div class="content">
+              <h3>Leroy Bailey</h3>
+              <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+              <p>Booked Crete on a whim and it turned out to be the best vacation I’ve ever had.</p>
+            </div>
+          </div>
+          <!-- User 3 Testimonial -->
+          <div class="testimonial-card">
+            <img src="images/user3.jpg" alt="">
+            <div class="content">
+              <h3>Lucy Foster</h3>
+              <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+              <p>From the form to the flight, everything was smooth. Edinburgh was magical!</p>
+            </div>
+          </div>
+          <!-- User 4 Testimonial -->
+          <div class="testimonial-card">
+            <img src="images/user4.jpg" alt="">
+            <div class="content">
+              <h3>Miguel Banks</h3>
+              <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+              <p>I usually stress about travel, but Voyagr handled it like a pro. Sicily was perfect.</p>
+            </div>
+          </div>
+        </div>
+       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p>&copy; 2025 Voyagr. All rights reserved.</p>
+    </footer>
   </body>
 </html>

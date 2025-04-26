@@ -158,6 +158,64 @@ main
   .book-now-btn:hover {
   background: #3e7b27;
 }
+/* Testimonials */
+main .testimonials {
+  padding: 50px;
+  background: #F2F9FF;
+}
+main .testimonials h2 {
+  margin-bottom: 50px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+}
+main .testimonials .testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 150px 0 100px 0;
+}
+main .testimonials .testimonials-grid .testimonial-card {
+  justify-self: center;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+main .testimonials .testimonials-grid .testimonial-card img {
+  border-radius: 50%;
+  width: 100px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+  position: absolute;
+  top: -55px;
+}
+main .testimonials .testimonials-grid .testimonial-card .content {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .testimonials .testimonials-grid .testimonial-card .content i{
+  color: #FF9B17;
+}
+main .testimonials .testimonials-grid .testimonial-card .content p:last-of-type{
+  font-style: italic;
+}
+footer {
+  background: #000;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
 /* Media Queries */
 /*
 @media (min-width: 320px) and (max-width:480px) {}
@@ -209,6 +267,16 @@ main
   main .popular-destinations h2 {
     font-size: 30px;
   }
+  main .testimonials{
+    padding: 50px 25px;
+  }
+  main .testimonials h2 {
+    font-size: 30px;
+  }
+  main .testimonials .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 100px;
+  }
 }
 @media (min-width: 481px) and (max-width: 768px) {
   header nav {
@@ -254,6 +322,13 @@ main
   main .popular-destinations .destination-grid .destination-card .content p {
     font-size: 18px;
   }
+  main .testimonials{
+    padding: 50px 25px;
+  }
+  main .testimonials .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 100px;
+  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   header nav .nav-links {
@@ -279,5 +354,9 @@ main
   }
   main .popular-destinations .destination-grid{
     gap: 40px;
+  }
+  main .testimonials .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 100px;
   }
 }
