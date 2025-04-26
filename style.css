@@ -237,6 +237,7 @@ footer {
   }
   header nav .nav-links {
     gap: 5px;
+    text-align: center;
   }
   header nav .nav-links li {
     padding: 5px;
